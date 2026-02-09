@@ -35,6 +35,7 @@ const router = createBrowserRouter([
             }
         ]
     }
-])
+], { basename: '/githubdeploy664259020/' })
+
 
 export default router;
