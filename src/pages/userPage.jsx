@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useUser } from "../contexts/UserContextProvider";
+import { useUser } from '../contexts/UserContext';
 
 const UserPage = ({ children, requireAuth = false }) => {
     const { isAuthenticated, loading } = useUser();

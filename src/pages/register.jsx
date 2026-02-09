@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { useUser } from '../contexts/UserContextProvider'
+import { useUser } from '../contexts/UserContext'
 import Swal from 'sweetalert2'
 
 const Register = () => {

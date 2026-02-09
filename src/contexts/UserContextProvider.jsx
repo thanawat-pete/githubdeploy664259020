@@ -1,9 +1,7 @@
-import { createContext, useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import AuthService from "../services/authentication.services";
 import { setCookie, getCookie, deleteCookie } from "../utils/cookie";
-
-// 1. Create Context
-const UserContext = createContext(null);
+import UserContext from "./UserContext";
 
 // 2. Create Provider Component
 export const UserContextProvider = ({ children }) => {
@@ -82,14 +80,3 @@ export const UserContextProvider = ({ children }) => {
 
     return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 };
-
-// 3. Custom Hook for easy access
-export const useUser = () => {
-    const context = useContext(UserContext);
-    if (!context) {
-        throw new Error("useUser must be used within a UserContextProvider");
-    }
-    return context;
-};
-
-export default UserContext;
