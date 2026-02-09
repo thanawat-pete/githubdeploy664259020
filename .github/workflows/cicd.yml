@@ -1,8 +1,8 @@
-name: 'build and deploy vue app'
+name: "build and deploy vue app"
 
 on:
   push:
-    branches: 
+    branches:
       - main
 
 jobs:

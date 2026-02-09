@@ -1,9 +1,9 @@
-name: 'build and deploy docker image'
+name: "build and deploy docker image"
 
 on:
   push:
     tags:
-      - 'main'
+      - "main"
 
 jobs:
   release-docker-image-job:
@@ -24,7 +24,7 @@ jobs:
       - name: Build and push Docker image
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          image: vue-app 
+          image: vue-app
           registry: ghcr.io/thanawat-pete
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
