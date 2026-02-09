@@ -10,6 +10,8 @@ import {
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Set base to the repository name so GitHub Pages serves assets correctly
+  base: '/githubdeploy664259020/',
   plugins: [react(), tailwindcss(), ],
   resolve: {
     alias: {
