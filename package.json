@@ -8,6 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "format": "npm run lint -- --fix",
+    "test:unit": "echo \"No unit tests defined\"",
     "preview": "vite preview"
   },
   "dependencies": {
